@@ -13,7 +13,8 @@
         "hassankhan/config": "^0.11.2",
         "php-di/slim-bridge": "^2.0",
         "vlucas/phpdotenv": "^2.4",
-        "tuupola/cors-middleware": "^0.5.2"
+        "tuupola/cors-middleware": "^0.5.2",
+        "visavi/cleanup": "^1.5"
     },
     "require-dev": {
         "phpunit/phpunit": "^6.5",
@@ -29,5 +30,10 @@
         "psr-4": {
             "Nicu\\Tests\\": "tests/"
         }
+    },
+    "scripts": {
+        "build": [
+            "php scripts/build.php"
+        ]
     }
 }
