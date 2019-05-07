@@ -1,5 +1,5 @@
 {
-    "name": "vikkio88/nicu",
+    "name": "vikkio88/nicu-framework",
     "description": "a small framework (built on slim + php-di) to create restful api",
     "keywords": ["slim", "php-di", "mvp", "rest", "microframework", "microservice"],
     "license": "MIT",
