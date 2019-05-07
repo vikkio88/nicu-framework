@@ -19,7 +19,6 @@ class Ping extends ApiAction
     {
         return [
             'version' => $this->config->get('app.version'),
-            'stuff' => $this->config->get('stuff'), // this is coming from .env
             'pong' => 'pong'
         ];
     }
