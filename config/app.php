@@ -37,6 +37,5 @@ return [
                 return $response;
             }
         ]
-    ],
-    'stuff' => getenv('SOME_STUFF')
+    ]
 ];

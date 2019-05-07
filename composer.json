@@ -30,10 +30,5 @@
         "psr-4": {
             "Nicu\\Tests\\": "tests/"
         }
-    },
-    "scripts": {
-        "build": [
-            "php scripts/build.php"
-        ]
     }
 }
