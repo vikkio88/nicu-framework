@@ -18,7 +18,6 @@ class BuildCommand extends ConsoleCommand
     const DIST_VENDOR = './dist/vendor/';
 
     protected $projectFolders = [
-        'src',
         'config'
     ];
     protected $mainFiles = [
@@ -27,6 +26,19 @@ class BuildCommand extends ConsoleCommand
         '.htaccess',
         'index.php'
     ];
+
+    public function __construct(array $args, array $projectFolders = null, array $mainFiles = null)
+    {
+        parent::__construct($args);
+
+        if ($projectFolders) {
+            $this->projectFolders = $projectFolders;
+        }
+
+        if ($mainFiles) {
+            $this->mainFiles = $mainFiles;
+        }
+    }
 
     public function run()
     {
